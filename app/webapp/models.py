@@ -19,5 +19,5 @@ class Product(models.Model):
 
 
 class Meta:
-    verbose_name = "Product"
-    verbose_name_plural = "Products"
+    verbose_name = "Category"
+    verbose_name_plural = "cCategories"
