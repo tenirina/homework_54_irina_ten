@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block main %}
+    <div class="container">
+        {% if products %}
+            {% for prod in products %}
+                <div class="row">
+                    <div class="col-2">
+                        <div class="box_image"><img src="{{prod.picture}}" alt="product"></div>
+                    </div>
+                    <div class="col-4">
+                        <h3>{{prod.name}}</h3>
+                        <p>{{prod.category.name}}</p>
+                        <h3>Price: {{prod.price}}$</h3>
+                        <a href="#">see more>>></a>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <h2>Add products</h2>
+        {% endif %}
+    </div>
+{% endblock %}
