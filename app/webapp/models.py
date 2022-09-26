@@ -14,7 +14,7 @@ class Product(models.Model):
     category = models.ForeignKey(verbose_name='Category', to='webapp.Category', null=False, blank=False, related_name='product', on_delete=models.RESTRICT)
     created_at = models.DateTimeField(verbose_name='Create date', auto_now_add=True)
     price = models.DecimalField(verbose_name="Price", decimal_places=2, max_digits=10, null=False, blank=False)
-    picture = models.CharField(verbose_name='Picture', max_length=50, null=True, blank=False)
+    picture = models.CharField(verbose_name='Picture', max_length=1000, null=True, blank=False)
     update_at = models.DateField(verbose_name='Update date', auto_now=True, null=True)
 
 
