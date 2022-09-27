@@ -11,7 +11,6 @@ def category_edit_view(request, pk):
         'name': request.POST.get('text'),
         'description': request.POST.get('description')
     }
-    print(category_data)
     category = get_object_or_404(Category, pk=pk)
     category.name = category_data['name']
     category.description = category_data['description']
