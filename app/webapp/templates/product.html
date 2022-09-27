@@ -12,6 +12,14 @@
                     <p class="price">Price: {{product.price}}$</p>
                     <p class="description">{{product.description}}</p>
                     <p class="created_at">Date created {{product.created_at}}</p>
+                    <div class="row">
+                        <div class="col-auto">
+                            <a href="#" type="button" class="btn btn-primary"> Edit </a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="{% url 'product_delete' product.pk %}" type="button" class="btn btn-danger">Delete</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -9,6 +9,7 @@ from webapp.view.category_delete import category_delete_view
 from webapp.view.category_edit import category_edit_view
 from webapp.view.product import product_view
 from webapp.view.product_add import product_add_view
+from webapp.view.product_delete import product_delete_view
 
 urlpatterns = [
     path("", products_view, name="products"),
@@ -19,5 +20,6 @@ urlpatterns = [
     path("categories/", categories_view, name="categories"),
     path("categories/<int:pk>", category_view, name="category"),
     path("categories/<int:pk>/edit", category_edit_view, name="category_edit"),
-    path("categories/<int:pk>/delete", category_delete_view, name="category_delete")
+    path("categories/<int:pk>/delete", category_delete_view, name="category_delete"),
+    path("products/<int:pk>/delete", product_delete_view, name="product_delete"),
 ]
