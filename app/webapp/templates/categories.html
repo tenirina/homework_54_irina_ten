@@ -1,14 +1,16 @@
 {% extends 'base.html' %}
 {% block main %}
-    <div class="main">
-        {% if categories %}
-           {% for category in categories %}
-                <div class="col-4">
-                    <h4>{{category.name}}</h4>
-                </div>
-           {% endfor %}
-        {% else %}
-            <h3>Add categories</h3>
-        {% endif %}
+    <div class="container">
+        <div class="main">
+            {% if categories %}
+               {% for category in categories %}
+                    <div class="col-4">
+                        <h4>{{category.name}}</h4>
+                    </div>
+               {% endfor %}
+            {% else %}
+                <h3>Add categories</h3>
+            {% endif %}
+        </div>
     </div>
 {% endblock %}
