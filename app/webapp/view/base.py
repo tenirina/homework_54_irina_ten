@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from webapp.models import Product
+from webapp.models.product import Product
 
 
 def products_view(request):

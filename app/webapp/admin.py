@@ -1,7 +1,7 @@
 from django.contrib import admin
 
-from webapp.models import Product
 from webapp.models.category import Category
+from webapp.models.product import Product
 
 
 class CategoryAdmin(admin.ModelAdmin):

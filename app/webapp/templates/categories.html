@@ -4,20 +4,23 @@
         <div class="main">
             <h3>Catgories</h3>
             {% if categories %}
+             <form>
+                 {% csrf_token %}
                {% for category in categories %}
-                    <div class="row box">
-                        <div class="col-10">
-                            <h5>{{category.name}}</h5>
-                        </div>
-                        <div class="col-1">
-                            <button type="button" class="btn btn-primary"> Edit </button>
-                        </div>
-                        <div class="col-1">
-                            <button type="button" class="btn btn-danger">Delete</button>
-                        </div>
+                <div class="row box">
+                    <div class="col-10">
+                        <h5>{{category.name}}</h5>
                     </div>
-            <br>
-               {% endfor %}
+                    <div class="col-1">
+                        <button type="button" class="btn btn-primary" formmethod="UPDATE"> Edit </button>
+                    </div>
+                    <div class="col-1">
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </div>
+                <br>
+                   {% endfor %}
+             </form>
             {% else %}
                 <h3>Add categories</h3>
             {% endif %}
