@@ -22,3 +22,8 @@ img{
 .created_at{
     font-size: 12px;
 }
+.box{
+    border: 1px solid black;
+    padding: 7px;
+    justify-content: space-between;
+}

@@ -5,8 +5,8 @@
   "fields": {
     "name": "Electronics",
     "description": "Electronics",
-    "created_at": "2022-09-26",
-    "update_at": null
+    "created_at": "2022-09-26T00:00:00Z",
+    "update_at": "2022-09-28T00:00:00Z"
   }
 },
 {
@@ -15,8 +15,8 @@
   "fields": {
     "name": "Food",
     "description": "Foods products",
-    "created_at": "2022-09-26",
-    "update_at": null
+    "created_at": "2022-09-26T00:00:00Z",
+    "update_at": "2022-09-28T00:00:00Z"
   }
 },
 {
@@ -25,8 +25,18 @@
   "fields": {
     "name": "Medical",
     "description": "Medical goods",
-    "created_at": "2022-09-26",
-    "update_at": null
+    "created_at": "2022-09-26T00:00:00Z",
+    "update_at": "2022-09-28T00:00:00Z"
+  }
+},
+{
+  "model": "webapp.category",
+  "pk": 17,
+  "fields": {
+    "name": "Water",
+    "description": "Water description",
+    "created_at": "2022-09-27T06:40:32.715Z",
+    "update_at": "2022-09-27T06:40:32.715Z"
   }
 },
 {
@@ -38,7 +48,7 @@
     "category": 1,
     "created_at": "2022-09-26T00:00:00Z",
     "price": "1000.00",
-    "picture": null,
+    "picture": "https://images.emojiterra.com/google/noto-emoji/v2.034/512px/1f4fa.png",
     "update_at": null
   }
 },
@@ -51,7 +61,7 @@
     "category": 1,
     "created_at": "2022-09-26T00:00:00Z",
     "price": "1500.00",
-    "picture": null,
+    "picture": "https://images.emojiterra.com/google/noto-emoji/v2.034/128px/1f576.png",
     "update_at": null
   }
 },
@@ -64,7 +74,7 @@
     "category": 3,
     "created_at": "2022-09-26T00:00:00Z",
     "price": "20.00",
-    "picture": null,
+    "picture": "https://images.emojiterra.com/google/noto-emoji/v2.034/128px/1fab4.png",
     "update_at": null
   }
 },
@@ -77,7 +87,7 @@
     "category": 3,
     "created_at": "2022-09-26T00:00:00Z",
     "price": "25.00",
-    "picture": null,
+    "picture": "https://images.emojiterra.com/google/noto-emoji/v2.034/128px/1f32a.png",
     "update_at": null
   }
 },
@@ -90,7 +100,7 @@
     "category": 2,
     "created_at": "2022-09-26T00:00:00Z",
     "price": "50.00",
-    "picture": null,
+    "picture": "https://images.emojiterra.com/google/noto-emoji/v2.034/128px/1f95b.png",
     "update_at": null
   }
 },
@@ -98,12 +108,12 @@
   "model": "webapp.product",
   "pk": 6,
   "fields": {
-    "name": "Sausage",
-    "description": "delicious sausage ",
+    "name": "Meat",
+    "description": "cut of meat",
     "category": 2,
     "created_at": "2022-09-26T00:00:00Z",
     "price": "150.00",
-    "picture": null,
+    "picture": "https://images.emojiterra.com/google/noto-emoji/v2.034/128px/1f969.png",
     "update_at": null
   }
 },

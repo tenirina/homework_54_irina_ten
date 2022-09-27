@@ -2,11 +2,21 @@
 {% block main %}
     <div class="container">
         <div class="main">
+            <h3>Catgories</h3>
             {% if categories %}
                {% for category in categories %}
-                    <div class="col-4">
-                        <h4>{{category.name}}</h4>
+                    <div class="row box">
+                        <div class="col-10">
+                            <h5>{{category.name}}</h5>
+                        </div>
+                        <div class="col-1">
+                            <button type="button" class="btn btn-primary"> Edit </button>
+                        </div>
+                        <div class="col-1">
+                            <button type="button" class="btn btn-danger">Delete</button>
+                        </div>
                     </div>
+            <br>
                {% endfor %}
             {% else %}
                 <h3>Add categories</h3>
