@@ -1,6 +1,6 @@
 from django.shortcuts import redirect, render
 
-from webapp.models import Category
+from webapp.models.category import Category
 
 
 def category_add_view(request):

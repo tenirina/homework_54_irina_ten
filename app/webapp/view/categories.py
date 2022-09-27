@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from webapp.models import Category
+from webapp.models.category import Category
 
 
 def categories_view(request):

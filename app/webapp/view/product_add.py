@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect
 from django.urls import reverse
 
-from webapp.models import Product, Category
+from webapp.models import Product
+from webapp.models.category import Category
 
 
 def product_add_view(request):
