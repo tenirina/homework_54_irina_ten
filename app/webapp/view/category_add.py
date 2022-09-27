@@ -10,5 +10,5 @@ def category_add_view(request):
         'name': request.POST.get('text'),
         'description': request.POST.get('textarea')
     }
-    Category.objects.create(**category_data)
-    return redirect('categories')
+    category = Category.objects.create(**category_data)
+    return redirect('category', pk=category.pk)

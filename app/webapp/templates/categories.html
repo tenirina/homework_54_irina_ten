@@ -4,7 +4,7 @@
         <div class="main">
             <h3>Catgories</h3>
             {% if categories %}
-             <form>
+             <form method="POST">
                  {% csrf_token %}
                {% for category in categories %}
                 <div class="row box">
@@ -12,10 +12,10 @@
                         <h5>{{category.name}}</h5>
                     </div>
                     <div class="col-1">
-                        <button type="button" class="btn btn-primary" formmethod="UPDATE"> Edit </button>
+                        <a href="{% url 'category_edit' category.pk %}" type="button" class="btn btn-primary"> Edit </a>
                     </div>
                     <div class="col-1">
-                        <button type="button" class="btn btn-danger">Delete</button>
+                        <a type="button" href="{% url 'category_edit' category.pk %}" class="btn btn-danger">Delete</a>
                     </div>
                 </div>
                 <br>

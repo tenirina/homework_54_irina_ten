@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block main %}
+    <div class="container">
+        <div class="main">
+            <div class="row">
+                <form action="{% url 'category_edit' category.pk %}" method="POST">
+                    {% csrf_token %}
+                         <div class="col-4">
+                            <div class="row g-2 align-items-start">
+                               <label for="title" class="form-label">Title</label>
+                               <input name="text" type="text" class="form-control" id="title" value="{{category.name}}">
+                            </div>
+                         </div>
+                    <br>
+                        <div class="col-4">
+                            <div class="row g-2 align-items-start">
+                               <label for="description" class="form-label">Description</label>
+                               <textarea name="description" class="form-control" id="description">{{category.description}}</textarea>
+                            </div>
+                         </div>
+                    <br>
+                        <div class="col-3">
+                            <button type="submit" class="btn btn-dark">Edit category</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
